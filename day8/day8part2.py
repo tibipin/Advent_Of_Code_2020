@@ -34,15 +34,11 @@ def fuck_this(start=0, acc=0):
             fuck_this(start=start, acc=acc)
     elif data[start]['instruction'] == 'jmp':
         if data[start]['sign'] == '+':
-
             start += data[start]['value']
-            fuck_this(start=start, acc=acc)
         else:
-
             start -= data[start]['value']
-            fuck_this(start=start, acc=acc)
+        fuck_this(start=start, acc=acc)
     else:
-
         start += 1
         fuck_this(start=start, acc=acc)
 

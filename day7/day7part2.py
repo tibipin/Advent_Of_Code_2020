@@ -1,3 +1,7 @@
+# Link to challenge: https://adventofcode.com/2020/day/7
+
+# Parsing the data
+
 input_data = {
     f.replace('bags', '').strip('\n').split('contain')[0].strip(' '):
         {
@@ -9,6 +13,8 @@ input_data = {
         }
     for f in open('input.txt', 'r').readlines()
     }
+
+# Solving the puzzle
 
 lista_magica = [1]
 
@@ -25,6 +31,6 @@ def fuck_this(bag):
 
 fuck_this('shiny gold')
 
-print(f'The result is: {sum(lista_magica)-1}')
+# Printing the result
 
-'Link to challenge: https://adventofcode.com/2020/day/7'
+print(f'The result is: {sum(lista_magica)-1}')

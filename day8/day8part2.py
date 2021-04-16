@@ -9,7 +9,7 @@ current_folder = f'{os.getcwd()}'
 data = {i: {'sign': j.split()[1][0],
             'value': int(j.split()[1][1:]),
             'instruction': j.split()[0]}
-        for i, j in enumerate(open(f'{current_folder}\\input.txt', 'r').readlines())}
+        for i, j in enumerate(open(f'{current_folder}\\day8\\input.txt', 'r').readlines())}
 
 # Solving the puzzle
 
